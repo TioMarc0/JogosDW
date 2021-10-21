@@ -14,7 +14,7 @@ $total = $soma;
 <body>
 <?php include "menu.php";?>
 <form action="" method="post">
-    <input type="submit" value="jogarr">
+    <input type="submit" value="jogar">
 </form>
 <?php
 $soma = $dado + $dados;

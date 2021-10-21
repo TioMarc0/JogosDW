@@ -42,11 +42,18 @@ background-color: #eeeeee;
      <input type="radio" name="jokenpo" value="3"/>tesoura
      <input type="button" value="jogar!" />
                 
-     </form>
      
+     <form action="" method="post">
      <?php 
-                  
-echo "<img src='img\Jokenpo/$jokenpo.jpg' alt=''>";
+ echo "<img src='img\Jokenpo/$jokenpo.png' alt=''>";  
+ 
+ 
+
+
+
+ echo "<img src='img\Jokenpo/$NPCJokenpo.png' alt=''>";    
+           
+
 
 
      

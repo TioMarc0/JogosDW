@@ -37,16 +37,16 @@ background-color: #eeeeee;
 <body>
 <?php include "menu.php"?> 
     <form action="submit" method="post">
-    <input type="radio" name="jokenpo" value="pedra"/>pedra
-     <input type="radio" name="jokenpo" value="papel"/> papel
-     <input type="radio" name="jokenpo" value="tesoura"/>tesoura
+    <input type="radio" name="jokenpo" value="1"/>pedra
+     <input type="radio" name="jokenpo" value="2"/> papel
+     <input type="radio" name="jokenpo" value="3"/>tesoura
      <input type="button" value="jogar!" />
                 
-     
+     </form>
      
      <?php 
                   
-echo "<img src='img/Jokenpo/$jokenpo.jpg' alt=''>";
+echo "<img src='img\Jokenpo/$jokenpo.jpg' alt=''>";
 
 
      
@@ -56,6 +56,6 @@ echo "<img src='img/Jokenpo/$jokenpo.jpg' alt=''>";
 
 ?>
 
-
+</form>
 </body>
 </html>

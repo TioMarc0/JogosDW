@@ -1,4 +1,14 @@
+
 <!DOCTYPE html>
+<?php
+
+$jokenpo = isset($_POST ['jokenpo']) ? $_POST ['jokenpo']:0 ;
+$NPCJokenpo = rand (1,3);
+$ganhou = "";
+
+
+    
+?> 
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
@@ -26,7 +36,26 @@ background-color: #eeeeee;
 </head>
 <body>
 <?php include "menu.php"?> 
-        
-        </form>
+    <form action="submit" method="post">
+    <input type="radio" name="jokenpo" value="pedra"/>pedra
+     <input type="radio" name="jokenpo" value="papel"/> papel
+     <input type="radio" name="jokenpo" value="tesoura"/>tesoura
+     <input type="button" value="jogar!" />
+                
+     
+     
+     <?php 
+                  
+echo "<img src='img/Jokenpo/$jokenpo.jpg' alt=''>";
+
+
+     
+
+
+
+
+?>
+
+
 </body>
 </html>

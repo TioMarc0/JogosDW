@@ -16,21 +16,23 @@ padding:0;
 background:#cccccc;
 text-align:center; 
 	}
-#tudo {
+ {
 width: 760px;
 margin:0 auto;			
 padding: 10px;
 text-align:left; 
 	}
-#conteudo {
+ {
 padding: 5px;
 background-color: #eeeeee;
 	}
 </style>
 </head>
 </head>
+
 <body>
 <?php include "menu.php";?>
+
 <form action="" method="post">
     <input type="submit" value="jogar">
 </form>

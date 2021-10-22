@@ -6,7 +6,6 @@ $jokenpo = isset($_POST ['jokenpo']) ? $_POST ['jokenpo']:0 ;
 $NPCJokenpo = rand (1,3);
 $ganhou = "";
 
-
     
 ?> 
 <html lang="pt-BR">
@@ -37,12 +36,11 @@ background-color: #eeeeee;
 <body>
 <?php include "menu.php"?> 
     <form action="" method="post">
-    <input type="radio" name="jokenpo"  value="1"/>papel
-     <input type="radio" name="jokenpo" value="2"/> pedra
-     <input type="radio" name="jokenpo" value="3"/>tesoura
-     <input type="submit" value="jogar!"/>
-                
-     
+    <input type="radio" name='jokenpo'  value='1'/>papel
+    <input type="radio" name='jokenpo' value='2'/> pedra
+    <input type="radio" name='jokenpo' value='3'/>tesoura
+    <input type="submit" value="jogar!"/>
+    
      
     
      
@@ -52,26 +50,38 @@ background-color: #eeeeee;
  
 
  echo "<img src= 'img/Jokenpo/$jokenpo.png' alt= ''>";
- 
+ echo "<img src='img\Jokenpo/$NPCJokenpo.png' alt=''>"; 
            //papel 1
            //pedra 2
            //tesoura 3
- 
+           // == igual
+           // != diferente
+           // < menor
+           // > maior
+           // <= menor igual
+           // >= maior igual
  if ($NPCJokenpo == $jokenpo){
     echo 'empate';
-} elseif ($jokenpo > $NPCJokenpo){
-       echo 'jogador ganhou';
- }elseif($NPCJokenpo > $jokenpo){
-        echo 'computador ganhou';
-    }elseif($jokenpo1 > $jokenpo2){
-    echo 'papel vence de pedra';
-}elseif ($jokenpo2 > $jokenpo3){
-    echo 'pedra vence tesoura';
-}elseif ($jokenpo3 > $jokenpo1){
-    echo 'tesoura vence papel';
-}
+        } elseif ($jokenpo > $NPCJokenpo){
+     echo 'jogador ganhou';
+         }elseif($NPCJokenpo > $jokenpo){
+     echo 'computador ganhou';
+            }
+    elseif('jokenpo2' > 'jokenpo1'){
+    }elseif ('jokenpo3' < 'jokenpo1'){
+    }elseif ('jokenpo3' < 'jokenpo2'){
+    }elseif ('jokenpo1' > 'jokenpo2')
+    
 
-echo "<img src='img\Jokenpo/$NPCJokenpo.png' alt=''>"; 
+    
+
+
+    
+
+?>
+<?php
+
+
      
 
 

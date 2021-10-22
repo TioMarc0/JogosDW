@@ -42,7 +42,7 @@ background-color: #eeeeee;
 <?php
 
   echo "<img src='img/dados/$dado.png' alt=''>";
-  if ($soma = $dado > $dados){
+  if ($dado > $dados){
   echo 'player venceu';
   }elseif($dado == $dados){
     echo 'empate';
@@ -51,11 +51,10 @@ background-color: #eeeeee;
 ?>
 <br>
 <?php?>
-<form action="" method="post">
 </form>
 <?php
 echo "<img src='img/dados/$dados.png' alt=''>";
-if  ($soma = $dado < $dados){
+if  ($dado < $dados){
     echo 'computador venceu';
     }elseif($dado == $dados){
         echo 'empate';

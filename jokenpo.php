@@ -13,6 +13,10 @@ $ganhou = "";
     <meta charset="UTF-8">
     
     <title>Jokenpo</title>
+    <br>
+    Jogue Jokenpo contra a CPU
+    <br>
+
 </head>
 <style type="text/css">
 body {
@@ -66,11 +70,10 @@ background-color: #eeeeee;
      echo 'jogador ganhou';
          }elseif($NPCJokenpo > $jokenpo){
      echo 'computador ganhou';
-            }
-    elseif('jokenpo2' > 'jokenpo1'){
+    }if('jokenpo2' < 'jokenpo1'){
     }elseif ('jokenpo3' < 'jokenpo1'){
-    }elseif ('jokenpo3' < 'jokenpo2'){
-    }elseif ('jokenpo1' > 'jokenpo2')
+    }else ('jokenpo3' < 'jokenpo2')
+    
     
 
     

@@ -36,22 +36,18 @@ background-color: #eeeeee;
 </head>
 <body>
 <?php include "menu.php"?> 
-    <form action="submit" method="post">
-    <input type="radio" name="jokenpo" value="1"/>pedra
-     <input type="radio" name="jokenpo" value="2"/> papel
+    <form action="" method="post">
+    <input type="radio" name="jokenpo" value="2"/>pedra
+     <input type="radio" name="jokenpo" value="1"/> papel
      <input type="radio" name="jokenpo" value="3"/>tesoura
-     <input type="button" value="jogar!" />
+     <input type="submit" value="jogar!"/>
                 
      
-     <form action="" method="post">
+     
      <?php 
- echo "<img src='img\Jokenpo/$jokenpo.png' alt=''>";  
+ echo "<img src='img\Jokenpo/$NPCJokenpo.png' alt=''>";   
  
- 
-
-
-
- echo "<img src='img\Jokenpo/$NPCJokenpo.png' alt=''>";    
+ echo "<img src= 'img/Jokenpo/$jokenpo.png' alt= ''>";
            
 
 

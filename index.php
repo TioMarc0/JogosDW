@@ -31,6 +31,9 @@ background-color: #eeeeee;
 </head>
 
 <body>
+  <BR>
+  Jogue dados contra a CPU
+  <BR>
 <?php include "menu.php";?>
 
 <form action="" method="post">
@@ -58,7 +61,7 @@ if  ($soma = $dado < $dados){
         echo 'empate';
     }
 ?>
-
+<br>
 
 </body>
 </html>
